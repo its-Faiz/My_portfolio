@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("Cp_hM_qAOjWFPQPoR");
+    })();
+</script>
+</head>
+
+<body onclick="hide()">
+    <script src="index.js"></script>
+    <div id="photo1" class="photo"></div>
+    <div id="photo2" class="photo"></div>
+
+    <div id="intro"><h1>Hi<img src="hand.png" id="hand"><br>I'm <u>Faiz Mohd</u></h1></div>
+
+
+    <div id="about" class="opt" onclick="about()"><h5>About me</h5></div>
+    <div id="projects" class="opt" onclick="projects()"><h5>Projects</h5></div>
+    <div id="resume" class="opt" onclick="resume()"><h5>Resume</h5></div>
+    <div id="contact" class="opt" onclick="contact()"><h5>Contact me</h5></div>
+
+    <div id="about_box" class="box">
+        <h2>About me</h2>
+        <p>I am Faiz Mohd, first year under-grad at IIT Ropar, 
+            pursuing electrical engineering.
+            <br>I am a tech enthusiast with little experience in web development.
+        </p>
+        <h4>Education</h4>
+        <p>
+            <u>High School</u>: St. Peter's Sr. Sec. School (2018)
+            <br><u>Inter</u>: Saiyyid Hamid Sr. Sec. School (2020)
+            <br><u>Graduation</u>: B.tech @ IIT Ropar(2022-Present)
+        </p>
+        <h4>Skills</h4>
+        <p>
+            <ul>
+                <li>Intermediate C++ developer, know most of the DSA</li>
+                <li>Tried Competetive Programming.</li>
+                <li>Begineer in Web Dev, know HTML, CSS & JS</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="project_box" class="box">
+        <h2 id="pro_h2">No Projects yet!</h2>
+        <img src="sad.png" id="sad">
+    </div>
+    <div id="resume_box" class="box">
+        <h2>Not Available!</h2>
+    </div>
+    <div id="contact_box" class="box"> 
+        <h2>Contact me</h2>
+        <form>
+            <input type="text" class="input" id="name" required="required" placeholder="Name">
+            <input type="email" class="input" id="email" required="required" placeholder="E-mail">
+            <textarea type="textarea" class="input" id="msg" required="required" placeholder="Message"></textarea>
+            <button type="button" class="input" id="btn" onclick="sendMail()">Send</button>
+        </form>
+    </div>
+    
+
+
+    <div class="wrapper">
+        &emsp;&emsp; Connect with me:<br>
+        <div class="button">
+           <div class="icon">
+                <a href="https://www.facebook.com/faiz.malik.16786">
+              <i class="fab fa-facebook-f"></i></a>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+            <a href="https://twitter.com/the_FaizMohd">
+              <i class="fab fa-twitter"></i></a>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+            <a href="https://www.instagram.com/the_faizmohd/">
+              <i class="fab fa-instagram"></i></a>
+           </div>
+           <span>Instagram</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+            <a href="https://github.com/its-Faiz">
+              <i class="fab fa-github"></i></a>
+           </div>
+           <span>Github</span>
+        </div>
+     </div>
+  
+    
+    
+</body>
+
+</html>
