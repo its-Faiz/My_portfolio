@@ -13,7 +13,6 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  /* float: left; */
   margin: 0 5px;
   overflow: hidden;
   background: #f1f1f1;
@@ -135,16 +134,24 @@ p,ul{
         rotate:15deg;
     }
 }
+#options{
+  height:280px;
+  width:100px;
+  position: absolute;
+  top:100px;
+  left:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .opt{
     width:100px;
     height:50px;
-    position: absolute;
-    top:100px;
-    left:0px;
     margin: 0px;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 1rem;
     box-shadow: -8px -6px 15px #fff, 6px 8px 15px rgba(0, 0, 0, .15);  
@@ -154,7 +161,7 @@ p,ul{
 .opt:hover{
     transform:scale(1.25);
 }
-#about{
+/* #about{
     position:absolute;
     top:100px;
     left:10px;
@@ -173,7 +180,7 @@ p,ul{
     position:absolute;
     top:310px;
     left:10px;
-}
+} */
 .box{
     z-index:2;
     height: 320px;
@@ -241,3 +248,257 @@ h4{
     font-weight: 100;
 }
 
+@media screen and (max-width:320px) {
+  .opt{
+    width:80px;
+    height: 30px;
+  }
+  #options{
+    width:300px;
+    height:120px;
+    position: absolute;
+    top:280px;
+    right:0px;
+    margin: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    flex-wrap:wrap;
+  }
+  .photo{
+    width: 200px;
+    height:200px;
+    right: 0px;
+    top: 10px;
+  }
+  #intro{
+    top: 120px;
+    left:20px;
+    font-size:1.2rem;
+  }
+  #hand{
+    height:50px;
+    width:50px;
+    left:50px;
+  }
+
+  .wrapper{
+    font-size:10px;
+    bottom: 0px;
+    left:100px;
+  }
+  .wrapper .button{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;    
+  }
+  .wrapper .button:hover{
+    width: 50px;
+  }
+  .wrapper .button .icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+  }
+  .wrapper .button .icon i{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .wrapper .button span{
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+
+@media screen and (max-width:376px) and (min-width:321px) {
+  .opt{
+    width:80px;
+    height: 30px;
+  }
+  #options{
+    width:350px;
+    height:120px;
+    position: absolute;
+    top:280px;
+    right:0px;
+    margin: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    flex-wrap:wrap;
+  }
+  .photo{
+    width: 220px;
+    height:220px;
+    right: 0px;
+    top: 10px;
+  }
+  #intro{
+    top: 140px;
+    left:20px;
+    font-size:1.35rem;
+  }
+  #hand{
+    height:50px;
+    width:50px;
+    left:50px;
+  }
+
+  .wrapper{
+    font-size:10px;
+    bottom: 0px;
+    left:120px;
+  }
+  .wrapper .button{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;    
+  }
+  .wrapper .button:hover{
+    width: 50px;
+  }
+  .wrapper .button .icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+  }
+  .wrapper .button .icon i{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .wrapper .button span{
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width:426px) and (min-width:377px) {
+  .opt{
+    width:90px;
+    height: 30px;
+  }
+  #options{
+    width:400px;
+    height:120px;
+    position: absolute;
+    top:300px;
+    right:0px;
+    margin: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    flex-wrap:wrap;
+  }
+  .photo{
+    width: 250px;
+    height:250px;
+    right: 0px;
+    top: 10px;
+  }
+  #intro{
+    top: 150px;
+    left:20px;
+    font-size:1.5rem;
+  }
+  #hand{
+    height:60px;
+    width:60px;
+    left:60px;
+  }
+
+  .wrapper{
+    font-size:12px;
+    bottom: 0px;
+    left:130px;
+  }
+  .wrapper .button{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;    
+  }
+  .wrapper .button:hover{
+    width: 70px;
+  }
+  .wrapper .button .icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 32px;
+  }
+  .wrapper .button .icon i{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wrapper .button span{
+    font-size: 14px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width:768px) and (min-width:427px){
+  .photo{
+    /* width: 350px; */
+    /* height:350px; */
+    width:45vw;
+    height:45vw;
+    right: 20px;
+    top: 20px;
+  }
+  #intro{
+    top:220px;
+    left:26vw;
+    font-size:5vw;
+  }
+  #hand{
+    height:11vw;
+    width:11vw;
+    position:absolute;
+    left:12vw;
+    top:8vw;
+  }
+  .opt{
+    height:6.5vw;
+    width:13vw;
+  }
+  #options{
+    font-size:2vw;
+    left:1vw;
+  }
+  .wrapper{
+    bottom: 10px;
+    left:36vw;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:769px){
+  .photo{
+    width: 400px;
+    height:400px;
+    right: 40px;
+    top: 30px;
+  }
+  #intro{
+    top: 200px;
+    left:150px;
+  }
+  #options{
+  height:300px;
+  width:110px;
+  font-size:1.1rem;
+  }
+  .opt{
+    width:110px;
+  }
+  .wrapper{
+    bottom: 10px;
+    left:400px;
+  }
+}
